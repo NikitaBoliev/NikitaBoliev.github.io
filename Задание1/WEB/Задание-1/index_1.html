@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Страница</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <ol>
+    <li><a href="http://example.com/" target="_blank"><p id="p1"></p>абсолютная гиперссылка на главную страницу сайта example.com</a></li>
+    <li><a href="https://example.com/" target="_blank">абсолютная гиперссылка на главную страницу сайта example.com в протоколе https</a></li>
+    <li><a href="ftp://tavalik.ru/Temp/file.txt" target="_blank">ссылка на файл на сервере FTP без авторизации</a></li>
+    <li><a href="ftp://user:pass123@tavalik.ru/Temp/file.txt" target="_blank">ссылка на файл на сервере FTP с авторизацией</a></li>
+    <li><a href="https://ru.wikipedia.org/wiki/Заглавная_страница#Изображение_дня" target="_blank"> ссылка на фрагмент страницы некоторого сайта</a></li>
+    <li><a href="#p1">ссылка на фрагмент текущей страницы</a></li>
+    <li><a href="https://someshop.ru/catalog/iphone?page=1&perpage=20" target="_blank">ссылка с двумя параметрами в URL</a></li>
+    <li><a href="index.html" title="index.html">список ссылок основной навигации сайта с подписями title</a></li>
+    <li><a>ссылка без href</a></li>
+    <li><a href="">ссылка с пустым href</a></li>
+    <li><a href="https://example.com/" rel="nofollow">ссылка, по которой запрещен переход поисковикам</a></li>
+    <!--noindex--><li><a href="">запрещенная для индексации поисковиками</a></li><!--/noindex-->
+    <li><p>"Пришёл, Увидел, Победил." - <a href="https://ru.wikipedia.org/wiki/Гай_Юлий_Цезарь" target="_blank">Гай Юлий Цезарь</a>.</p></li>
+    <li><a href="https://ru.wikipedia.org/wiki/Заглавная_страница" target="_blank"><img src="pictures/Wiki-black.png" alt="" width="300" height="300"></a></li>
+    <li><img src="pictures/spartans.jpg" alt="" width="680" height="383" usemap="#spartans">
+      <map name="spartans">
+      <area shape="circle" alt="1" coords="430,196,45" href="https://ru.wikipedia.org/wiki/Леонид_I" title="Леонид I" target="_blank"> 
+      <area shape="rect" alt="2" coords="548,139,618,230" href="https://ru.wikipedia.org/wiki/Спарта" title="Спартанец" target="_blank"> 
+      <area shape="circle" alt="3" coords="325,170,40" href="https://ru.wikipedia.org/wiki/Спарта" title="Спартанец" target="_blank"> 
+      </map></li>
+    <li><a href="ABC.html">относительная на страницу в текущем каталоге</a></li>
+    <li><a href="./about/A.html">относительная на страницу в каталоге about</a></li>
+    <li><a href="../B.html">относительная на страницу в каталоге уровнем выше текущего</a></li>
+    <li><a href="../../C.html">относительная на страницу в каталоге двумя уровнями выше</a></li>
+    <li><a href="/">сокращенную на главную</a></li>
+    <li><a href="./about/A.html">сокращенную ссылку на внутреннюю</a></li>
+    </ol>
+    <h1>Форма</h1>
+    <form action="/" method="POST">
+      <label>Имя<br><input name="field-name" value="начальное Имя"><br></label>
+      <label>e-mail<br><input name="field-email" type="email" placeholder="Введите почту"><br></label>
+      <label>Дата рождения<br><input name="field-date" type="date"><br></label>
+      <label>Пол<br><input type="radio" name="radio">Мужской (он)</label>
+      <label><input type="radio" name="radio">Женский (она)</label>
+      <label><input type="radio" name="radio" checked="checked">Средний (оно)<br></label>
+      <label>Количество конечностей<br><input type="radio" name="radio-2" checked="checked">Четыре</label>
+      <label><input type="radio" name="radio-2">Больше четырёх</label>
+      <label><input type="radio" name="radio-2">Меньше четырёх<br></label>
+      <label>Сверхспособности:<br>
+      <select multiple="multiple">
+      <option value="Значение1">Бессмертие</option>
+      <option value="Значение2">Левитация</option>
+      <option value="Значение3">Бесконечная масса</option>
+      <option value="Значение4">Отращивание доп. конечностей</option>
+      <option value="Значение5">Становится всемирной мафией на 1 день</option>
+      </select><br></label>
+      <label>Биография<br><textarea name="biography" placeholder="Напишите про себя!"></textarea><br></label>
+      <label>С контрактом ознакомлен(а)(о)<input type="checkbox" name="check-1"><br><br></label>
+      <input type="submit" value="Отправить">
+    </form>
+  </body>
+</html>
