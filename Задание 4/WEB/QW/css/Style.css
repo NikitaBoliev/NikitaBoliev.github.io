@@ -1,0 +1,89 @@
+html,body{
+  background-image: url(../pictures/fon.jpg);
+}
+header{
+  position: relative;
+  height: 80px;
+  min-width: 100%;
+  background-color: bisque;
+  box-shadow: none;
+  z-index: 1;
+  top: 35px;
+}
+#line{
+  width: 1024px;
+  margin: 0 auto;
+  height: 80px;
+}
+#logo{
+  width: 220px;
+  height: 80px;
+  position: relative;
+  float: left;
+}
+nav{
+  width: 630px;
+  float: left;
+}
+nav ul{
+  height: 80px;
+  line-height: 80px;
+}
+nav ul li{
+  float:left;
+  border-right: 1px solid #fff;
+  line-height: 51px;
+}
+nav ul li a{
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  color:darkblue ;
+  font-weight: bold;
+  padding: 0 30px;
+}
+table {
+  border-collapse: collapse; 
+  line-height: 1.1;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  background-color:  rgb(0, 0, 0);
+  color: #ffffff;
+}
+article{
+  margin-bottom: 100px;
+}
+caption {
+  font-family: annabelle, cursive;
+  font-weight: bold;
+  font-size: 2em;
+  padding: 10px; 
+  color: #F3CD26;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.3);
+ }
+th {
+  padding: 10px; 
+  border: 1px solid #A9E2CC;
+}
+td {
+  font-size: 0.8em;
+  padding: 5px 7px;
+  border: 1px solid #A9E2CC;
+}
+.first {
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+footer{
+  position: static;
+  bottom: 0;
+  height: 48px;
+  min-width: 100%;
+  background-color: bisque;
+
+}
+footer p{
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+}
