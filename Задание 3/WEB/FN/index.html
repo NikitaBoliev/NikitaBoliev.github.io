@@ -140,15 +140,15 @@
     </table>
     <h1>Форма</h1>
     <form action="/" method="POST">
-      <label>Имя<br><input name="field-name" value="начальное Имя"><br></label>
-      <label>e-mail<br><input name="field-email" type="email" placeholder="Введите почту"><br></label>
-      <label>Дата рождения<br><input name="field-date" type="date"><br></label>
-      <label>Пол<br><input type="radio" name="radio">Мужской (он)</label>
-      <label><input type="radio" name="radio">Женский (она)</label>
-      <label><input type="radio" name="radio" checked="checked">Средний (оно)<br></label>
-      <label>Количество конечностей<br><input type="radio" name="radio-2" checked="checked">Четыре</label>
-      <label><input type="radio" name="radio-2">Больше четырёх</label>
-      <label><input type="radio" name="radio-2">Меньше четырёх<br></label>
+      <label>Имя<br><input name="field-name" value="начальное Имя" required><br></label>
+      <label>e-mail<br><input name="field-email" type="email" placeholder="Введите почту" required><br></label>
+      <label>Дата рождения<br><input name="field-date" type="date" required><br></label>
+      <label>Пол<br><input type="radio" name="radio" >Мужской (он)</label>
+      <label><input type="radio" name="radio" >Женский (она)</label>
+      <label><input type="radio" name="radio" checked="checked" >Средний (оно)<br></label>
+      <label>Количество конечностей<br><input type="radio" name="radio-2" checked="checked" >Четыре</label>
+      <label><input type="radio" name="radio-2" >Больше четырёх</label>
+      <label><input type="radio" name="radio-2" >Меньше четырёх<br></label>
       <label>Сверхспособности:<br>
       <select multiple="multiple">
       <option value="Значение1">Бессмертие</option>
@@ -158,7 +158,7 @@
       <option value="Значение5">Становится всемирной мафией на 1 день</option>
       </select><br></label>
       <label>Биография<br><textarea name="biography" placeholder="Напишите про себя!"></textarea><br></label>
-      <label>С контрактом ознакомлен(а)(о)<input type="checkbox" name="check-1"><br><br></label>
+      <label>С контрактом ознакомлен(а)(о)<input type="checkbox" name="check-1" required><br><br></label>
       <input type="submit" value="Отправить">
     </form>
   </div>
