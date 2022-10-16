@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Калькулятор</title>
+</head>
+<body>
+    <h2>Введите цену товара</h2>
+	<!-- поле ввода первого числа -->
+	<input id="num1" />
+
+	<!-- блок с кнопками -->
+
+    <h2>Введите количество товара</h2>
+	<!-- поле ввода второго числа -->
+	<input id="num2" />
+	<br>
+
+	<!-- кнопка для расчётов -->
+	<button onclick="func()">Посчитать</button>
+
+	<!-- здесь будет результат -->
+	<p id="result"></p>
+
+	<!-- наш скрипт -->
+	<script>
+	  // переменная, в которой хранится выбранное математическое действие
+	  var op; 
+
+	  // функция расчёта
+	  function func() {
+	  	// переменная для результата
+	    var result;
+	    // получаем первое и второе число
+	    var num1 = Number(document.getElementById("num1").value);
+	    var  num2 = Number(document.getElementById("num2").value);
+	    // смотрим, что было в переменной с действием, и действуем исходя из этого
+	   /*switch (op) {
+	      case '*':
+	        result = num1 * num2;
+	        break;
+	    }*/
+        result = num1 * num2;
+
+	    // отправляем результат на страницу
+        document.getElementById("result").innerHTML = result;	  
+    }
+	</script>
+
+</body>
+</html>
